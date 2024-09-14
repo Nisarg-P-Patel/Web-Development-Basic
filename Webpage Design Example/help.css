@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.header .context-box{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(nature5.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    display: inline-flex;
+}
+.menu img{
+    height: 95px;
+    width: 150px;
+    margin: 30px 0 0 80px;
+    cursor: pointer;
+}
+.menu button{
+    padding: 5px 20px ;
+    background: #ff4d73;
+    color:  #000;
+    font-size: 16px ;
+    border: 2px solid #ffb394;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    cursor: pointer;
+}
+.menu button .fa{
+    margin-right: 10px;
+}
+.banner-text{
+    width: 80%;
+    color: #fff;
+    margin: 16% auto 0;
+    text-align: center;
+}
+.banner-text h2{
+    margin-top: 50px;
+    font-size: 64px;
+}
+.banner-text p{
+    font-size: 14px;
+    margin: 20px auto 50px;
+}
+.banner-text a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #ffb394;
+    display: block;
+    padding: 10px ;
+    width: 100px;
+    margin: auto;
+    background: #ff4d73;
+    transition: 4s;
+}
+.banner-text a:hover{
+    background: transparent;
+}
+
+
+.service .context-box {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(nature4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.service h1{
+    text-align: center;
+    padding-top: 100px;
+}
+.service h1::after{
+    content: '';
+    background: #ff4d73;
+    display: block;
+    height: 3px;
+    width: 475px;
+    margin: 20px auto 50px;
+}
+.services .icon{
+    font-size: 30 px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 4px;
+    width: 4px;
+    border: 1px solid #ff4d73;
+    border-radius: 50%;
+    color: #ff4d73;
+}
+.services p{
+    font-size: 15px;
+    margin-top: 10px;
+    color: #777;
+    padding: 20px;
+}
+.services span{
+    color: #ff4d73;
+    transition: 2s;
+}
+.services .col-md-3:hover{
+    background: #ff4d73;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.3);
+    transition: 2s;
+}
+.services .col-md-3:hover .icon{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.services .col-md-3:hover p{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.services .col-md-3:hover span{
+    color: #fff;
+}
+
+
+.footer .context-box {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(nature3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.footer h1{
+    text-align: center;
+    padding-top: 100px;
+}
+.footer h1::after{
+    content: '';
+    background: #ff4d73;
+    display: block;
+    height: 3px;
+    width: 250px;
+    margin: 20px auto 50px;
+}
+.contact-form{
+    padding: 15px;
+}
+.form-control{
+    border-radius: 0 !important;
+    border: none;
+    box-shadow: none !important;
+}
+::placeholder{
+    font-size: 12px;
+}
+.contact-form button{
+    border: none !important;
+    background: #ff4d73 !important;
+    box-shadow: none !important;
+    border-radius: 0 ;
+}
+.contact-info .follow{
+    background-color: #fff;
+    padding: 8px;
+    margin: 15px;
+}
+.contact-info .fa{
+    margin: 10px ;
+    font-size: 20px;
+    color: #ff4d73;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.contact-info span{
+    font-size: 14px;
+}
+.footer h2{
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 13px;
+    color: #e6e6e6;
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.footer h2:hover{
+    overflow: visible;
+}
+.footer h2:hover:after{
+    content: '';
+    background: #ff4d73;
+    display: block;
+    height: 3px;
+    width: 400px;
+    margin: 20px auto 50px;
+}
