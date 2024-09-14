@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Practical_9</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+	<style>
+		body {
+			background: url(ajs.jpg);
+			background-position: center;
+			background-size: cover;
+		}
+		#box{
+			border: 1px solid black;
+            width: 30%;
+            height: 30px;
+            display: block;
+            text-align:center;
+            background-color:cadetblue;
+		}
+	</style>
+</head>
+<center>
+	<script>
+		var ngApp = angular.module('myNgApp', []);
+		ngApp.controller('myController', function ($scope) {
+			$scope.student = { firstName: 'Nisarg',m: 'Pravinkumar', lastName: 'Patel' };
+			$scope.age=20;
+			$scope.rn='18BCE136';
+			$scope.gender="Male";
+		});
+		</script>
+
+<body ng-app="myNgApp">
+<div>
+	<h1><strong><font face='Copperplate Gothic Light'><u>Using Expression!</u></strong></h1>
+    <div ng-app ng-init=" DOB='14-03.2001'; Age= 20; gender='Male'; rn='18BCE136'; person = { firstName:'Nisarg',m: 'Pravinkumar', lastName :'Patel'}">
+		<h4>{{"Name :" + person.firstName + " " +person.m+ " " + person.lastName}}<br>
+			{{"Roll No :" + rn}}<br>
+		{{"Age :" + Age}}<br>
+		{{"Date Of Birth :" + DOB}}<br>
+		{{"Gender :" + gender}}</h4>
+    </div>
+	<hr>
+	<h1><strong><font face='Copperplate Gothic Light'><u>Using Directives!</u><br>(ng-model-expression)</strong></h1>
+	<div ng-app >
+		<input type="text" ng-model="name_ip" placeholder="Enter Name"/>
+		<div ng-app>
+			<h3>Name : {{name_ip}}</h3><br>
+		</div>
+		<input type="text" ng-model="rn_ip" placeholder="Enter Roll No."/>
+		<div>
+			<h3>Roll No. : {{rn_ip}}</h3><br>
+		</div>
+		<input type="text" ng-model="Age_ip" placeholder="Enter Age"/>
+		<div ng-app>
+			<h3>Age : {{Age_ip}}</h3><br>
+		</div>
+		<input type="text" ng-model="Gender_ip" placeholder="Enter Gender"/>
+		<div ng-app>
+			<h3>Gender : {{Gender_ip}}</h3><br>
+		</div>
+		<input type="text" ng-model="DOB_ip" placeholder="Enter DOB"/>
+		<div ng-app>
+			<h3>Date of Birth : {{DOB_ip}}</h3><br>
+		</div>
+	</div>
+	<hr>
+	<h1><strong><font face='Copperplate Gothic Light'>Using Directives!<br>(ng-model-bind)</strong></h1>
+	<div ng-app >
+		<input type="text" ng-model="name_d" placeholder="Enter Name"/>
+		<div ng-app>
+			<h3>Name : <span ng-bind="name_d"></span></h3><br>
+		</div>
+		<input type="text" ng-model="rn_d" placeholder="Enter Roll No."/>
+		<div>
+			<h3>Roll No.: <span ng-bind="rn_d"></span></h3><br>
+		</div>
+		<input type="text" ng-model="Age_d" placeholder="Enter Age"/>
+		<div ng-app>
+			<h3>Age : <span ng-bind="Age_d"></span></h3><br>
+		</div>
+		<input type="text" ng-model="Gender_d" placeholder="Enter Gender"/>
+		<div ng-app>
+			<h3>Gender : <span ng-bind="Gender_d"></span></h3><br>
+		</div>
+		<input type="text" ng-model="DOB_d" placeholder="Enter DOB"/>
+		<div ng-app>
+			<h3>Date of Birth : <span ng-bind="DOB_d"></span></h3><br>
+		</div>
+	</div>
+	<hr>
+	<h1><strong><font face='Copperplate Gothic Light'>Using Controllers!</strong></h1>
+	<div ng-controller="myController">
+		<h4>First Name: {{student.firstName}}<br>
+			Middle Name: {{student.m}}<br>
+		Last Name: {{student.lastName}}<br>
+			Roll No. : {{rn}}<br>
+		Age : {{age}}<br>
+			Gender : {{gender}}</h4>
+	</div>
+</div>
+</body>
+</center>
+</html>
